@@ -133,9 +133,7 @@ func deleteCustomer(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{
-		"message": "customer deleted",
-	})
+	c.JSON(http.StatusOK, gin.H{"message": "customer deleted"})
 }
 
 func authMiddleware(c *gin.Context) {
